@@ -26,19 +26,9 @@ public class RobbieTest{
   }
 
   @Test
-  public void robbieCanDrink(){
+  public void robbieCanDrinkBeer(){
     robbie.consume(beer);
     assertEquals(1, robbie.nomNomCount());
-  }
-
-
-  @Test
-  public void robbieSoberNextDay(){
-    robbie.consume(beer);
-    robbie.consume(gin);
-    robbie.consume(headSizedBurrito);
-    robbie.sober();
-    assertEquals(0, robbie.nomNomCount());
   }
 
   @Test
@@ -53,4 +43,20 @@ public class RobbieTest{
     assertEquals(1, robbie.nomNomCount());
   }
 
+  @Test
+  public void robbieSoberNextDay(){
+    robbie.consume(beer);
+    robbie.consume(gin);
+    robbie.consume(headSizedBurrito);
+    robbie.sober();
+    assertEquals(0, robbie.nomNomCount());
+  }
+
+  @Test
+  public void canGetBurritoBelly(){
+    robbie.consume(headSizedBurrito);
+    Consumable burrito = robbie.robbieGetsBeerAndBurritoShits();
+    HeadSizedBurrito original = (HeadSizedBurrito)burrito;
+    assertNotNull(burrito);
+  }
 }

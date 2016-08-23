@@ -24,6 +24,13 @@ class Robbie{
   public void sober(){
       drunk.clear();
     }
-  }
+  
 
+  public Consumable robbieGetsBeerAndBurritoShits(){
+    if (nomNomCount() > 0){
+      return drunk.remove(0);
+    }
+    return null;
+  }
+}
 
