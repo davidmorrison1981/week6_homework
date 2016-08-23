@@ -22,13 +22,13 @@ public class RobbieTest{
 
   @Test
   public void robbieStartsSober(){
-    assertEquals(0, robbie.drinksCount());
+    assertEquals(0, robbie.nomNomCount());
   }
 
   @Test
   public void robbieCanDrink(){
-    robbie.drink(beer);
-    assertEquals(1, robbie.drinksCount());
+    robbie.consume(beer);
+    assertEquals(1, robbie.nomNomCount());
   }
 
 
@@ -38,12 +38,18 @@ public class RobbieTest{
     robbie.consume(gin);
     robbie.consume(headSizedBurrito);
     robbie.sober();
-    assertEquals(0, robbie.drinksCount());
+    assertEquals(0, robbie.nomNomCount());
   }
 
   @Test
   public void robbieCanDrinkGin(){
-    robbie.drink(gin);
+    robbie.consume(gin);
+    assertEquals(1, robbie.nomNomCount());
+  }
+
+  @Test
+  public void robbieCanEatBurrito(){
+    robbie.consume(gin);
     assertEquals(1, robbie.nomNomCount());
   }
 

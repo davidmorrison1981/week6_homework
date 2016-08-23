@@ -1,3 +1,3 @@
-class Gin{
+public class Gin implements Consumable{
   
 }

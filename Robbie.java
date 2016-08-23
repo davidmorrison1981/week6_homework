@@ -13,7 +13,7 @@ class Robbie{
     return this.type;
   }
 
-  public int nomNom Count(){
+  public int nomNomCount(){
     return drunk.size();
   }
 
@@ -25,5 +25,5 @@ class Robbie{
       drunk.clear();
     }
   }
-}
+
 
