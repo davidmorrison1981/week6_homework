@@ -13,11 +13,11 @@ class Robbie{
     return this.type;
   }
 
-  public int drinksCount(){
+  public int nomNom Count(){
     return drunk.size();
   }
 
-  public void drink(Consumable nomNom){
+  public void consume(Consumable nomNom){
     drunk.add(nomNom);
   }
 

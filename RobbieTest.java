@@ -1,14 +1,18 @@
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import org.junit.*;
 
 public class RobbieTest{
   Robbie robbie;
-  Drinks drinks;
+  Beer beer;
+  Gin gin;
+  HeadSizedBurrito headSizedBurrito;
 
   @Before
   public void before(){
     robbie = new Robbie("Huggy Drunk");
-    drinks = new Drinks();
+    beer = new Beer();
+    gin = new Gin();
+    headSizedBurrito = new HeadSizedBurrito();
   }
 
   @Test
@@ -23,34 +27,24 @@ public class RobbieTest{
 
   @Test
   public void robbieCanDrink(){
-    robbie.drink(drinks);
+    robbie.drink(beer);
     assertEquals(1, robbie.drinksCount());
   }
 
-  @Test
-  public void robbieIsDrunk(){
-    for (int i=0; i<2; i++){
-      robbie.drink(drinks);
-    }
-    assertEquals(true, robbie.robbieDrunk());
-  }
-
-  @Test
-  public void robbieNotDrunk(){
-    for (int i=0; i<1; i++){
-      robbie.drink(drinks);
-    }
-    assertEquals(false, robbie.robbieDrunk());
-
-  }
 
   @Test
   public void robbieSoberNextDay(){
-    robbie.drink(drinks);
-    assertEquals(1, robbie.drinksCount());
+    robbie.consume(beer);
+    robbie.consume(gin);
+    robbie.consume(headSizedBurrito);
     robbie.sober();
     assertEquals(0, robbie.drinksCount());
   }
 
+  @Test
+  public void robbieCanDrinkGin(){
+    robbie.drink(gin);
+    assertEquals(1, robbie.nomNomCount());
+  }
 
 }

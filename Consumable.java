@@ -1,7 +1,10 @@
-public interface Spend{
+public interface Consumable{
 
   int buybeer();
-  String buyburrito();
-  
+  int buyburrito();
+
 
 }
+
+
+
