@@ -1,7 +1,7 @@
 package Game;
 
-public class Player {
-  private String name;
+abstract class Player {
+  String name;
  
 
   public Player(String name) {

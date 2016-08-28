@@ -8,18 +8,18 @@ public class GameTest{
 
   Pack pack;
   Deck deck;
-  Player player;
+  Player1 player1;
 
   @Before
   public void before(){
     pack = new Pack();
     deck = new Deck();
     deck.add(pack);
-    player = new Player("David");
+    player1 = new Player1("David");
   }
 
   @Test
   public void playerHasName(){
-    assertEquals("David", player.getName());
+    assertEquals("David", player1.getName());
   }
 }
