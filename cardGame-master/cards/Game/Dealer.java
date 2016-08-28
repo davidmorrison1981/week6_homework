@@ -1,8 +1,8 @@
-package Game;
+// package Game;
 
-public class Dealer extends Player{
+// public class Dealer extends Player{
 
-  public Dealer(String name){
-    super(name);
-  }
-}
+//   public Dealer(String name){
+//     super(name);
+//   }
+// }
