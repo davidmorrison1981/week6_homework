@@ -4,19 +4,17 @@ import java.util.*;
 public class Hand {
 
   private ArrayList<Card> hand;
-  int score = 0;
+  private String score;
 
   public Hand() {
     hand = new ArrayList<Card>();
+    score = score;
   }
+
 
   public void takeACard(Deck deck){
     //deck may become discard pile in the future so this may become an interface not deck passed in
     hand.add(deck.dealCard());
-    for (i=0; i>hand.size(); i++){
-      score +=hand.get(i).value;
-    }
-    return score
   }
 
   public String toString(){
@@ -49,5 +47,3 @@ public class Hand {
 //         score = value;
 //     }
 
-    return score;
-}

@@ -30,6 +30,9 @@ public class Deck {
   public Card dealCard() {
     Card card = deck.get(0);
     deck.remove(0);
+    // deck.shuffle();
     return card;
   }
+
+
 }
