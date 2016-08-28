@@ -1,4 +1,4 @@
-package cardGame;
+package cards;
 import java.util.*;
 
 public class Hand {

@@ -1,8 +1,8 @@
 import static org.junit.Assert.*;
 import org.junit.*;
-import cardGameTypes.*;
-import cardGame.*;
-import cardGameTypes.*;
+import cardTypes.*;
+import cards.*;
+import Game.*;
 
 public class CardTest{
 

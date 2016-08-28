@@ -1,8 +1,8 @@
-package cardGame;
+package Game;
 
 public class Player {
   private String name;
-  // private Hand hand;
+ 
 
   public Player(String name) {
     this.name = name;
@@ -11,6 +11,7 @@ public class Player {
   public String getName(){
     return this.name;
   }
+
   
 
 }

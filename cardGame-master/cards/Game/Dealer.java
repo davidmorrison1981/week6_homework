@@ -1,4 +1,4 @@
-package cardGame;
+package Game;
 
 public class Dealer {
 }

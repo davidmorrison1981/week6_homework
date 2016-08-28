@@ -1,5 +1,5 @@
-package cardGame;
-import cardGameTypes.*;
+package cards;
+import cardTypes.*;
 
 public class Card {
   private Suits suit;

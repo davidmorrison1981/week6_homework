@@ -1,4 +1,4 @@
-package cardGameTypes;
+package cardTypes;
 
 public enum Suits {
   CLUBS ("Clubs"),

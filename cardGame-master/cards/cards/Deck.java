@@ -1,6 +1,6 @@
-package cardGame;
+package cards;
 import java.util.*;
-import cardGameTypes.*;
+import cardTypes.*;
 
 public class Deck {
   private ArrayList<Card> deck;

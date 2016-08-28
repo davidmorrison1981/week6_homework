@@ -1,6 +1,6 @@
-package cardGame;
+package Game;
 
 public class Game {
 
-  
+
 }
