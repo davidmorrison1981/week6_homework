@@ -1,17 +1,17 @@
-package Game;
+// package Game;
 
-abstract class Player {
-  String name;
+// abstract class Player {
+//   String name;
  
 
-  public Player(String name) {
-    this.name = name;
-  }
+//   public Player(String name) {
+//     this.name = name;
+//   }
 
-  public String getName(){
-    return this.name;
-  }
+//   public String getName(){
+//     return this.name;
+//   }
 
   
 
-}
+// }

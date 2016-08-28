@@ -23,3 +23,26 @@ public class Hand {
   }
 
 }
+
+// public static int dealCard(){
+//     int value = (int) (Math.random() * 10) + 1;
+//     int score = value;
+//     System.out.println(+value);
+//     if(value == 11) {
+//         System.out.println("Ace!");
+//         score = 11;
+//     }else if (value == 10) {
+//         System.out.println("King!");
+//         score = 10;
+//     }else if (value == 10) {
+//         System.out.println("Queen!");
+//         score = 10;
+//     } else if (value == 10) {
+//         System.out.println("Jack!");
+//         score = 10;
+//     } else {
+//         score = value;
+//     }
+
+    return score;
+}
