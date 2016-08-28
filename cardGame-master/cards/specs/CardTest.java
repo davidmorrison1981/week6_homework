@@ -8,12 +8,14 @@ public class CardTest{
 
   Pack pack;
   Deck deck;
+  Player player;
 
   @Before
   public void before(){
     pack = new Pack();
     deck = new Deck();
     deck.add(pack);
+    player = new Player("David");
   }
   @Test
   public void packSizeCheck(){
@@ -53,6 +55,11 @@ public class CardTest{
     }
     assertEquals("Ace of Clubs\n2 of Clubs\n3 of Clubs\n4 of Clubs\n5 of Clubs\n", hand.toString());
     assertEquals("6 of Clubs", deck.get(0).toString());
+  }
+
+  @Test
+  public void playerHasName(){
+    assertEquals("David", player.getName());
   }
  
 

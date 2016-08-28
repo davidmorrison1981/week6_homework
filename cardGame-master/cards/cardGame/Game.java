@@ -1,4 +1,6 @@
 package cardGame;
 
-public class Player {
+public class Game {
+
+  
 }
